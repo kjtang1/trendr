@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendr</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Trendr</h1>
+    </header>
+
+    <main> 
+        <section id="filters">
+            <h2>Filter Results</h2>
+            <form>
+                <label for="keyword">Enter keyword: </label>
+                <input type="text" id="keyword" name="keyword"><br>
+                <input type="radio" id="upvotes" name="graphdata" value="upvotes">
+                <label for="upvote">Upvote trends for this keyword</label><br>
+                <input type="radio" id="popularity" name="graphdata" value="popularity">
+                <label for="css">Keyword popularity in posts</label><br>
+                <button type="submit">Go!</button>
+            </form>
+        </section>
+
+        <section id="visualization">
+            <h2>Visualization</h2>
+            <canvas id="plot"></canvas>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Made by CSE 412 Group 19</p>
+    </footer>
+</body>
+
+</html>
